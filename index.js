@@ -7,6 +7,7 @@ app.use(cors())
 app.use("/api",bollyRouter)
 
 
-app.listen(4000,()=>{
-    console.log("page is perfect");
+app.listen(process.env.PORT||8000,()=>{
+    console.log("app is running");
 })
+
